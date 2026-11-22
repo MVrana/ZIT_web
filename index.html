@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio fotografa Martina Vrány – motorsport, reportáže a autorská fotografie.">
+  <title>Martin Vrána | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <h1 class="site-title"><a href="index.html" class="site-logo">Martin Vrána</a></h1>
+    <nav class="nav-links" aria-label="Hlavní navigace">
+      <a href="galerie.html">Galerie</a>
+      <a href="#poptavka">Kontakt</a>
+    </nav>
+  </header>
+
+  <main class="portfolio">
+    <article class="portfolio-item">
+      <div class="item-description">
+        <h2>RallyCup Přerov</h2>
+        <p class="date">24. 02. 2024</p>
+        <p class="description">Série snímků přímo z trati na Přerovském letišti.</p>
+      </div>
+      <div class="image-container">
+        <img src="img/Prerov/MV_PrerovRally_24.2.24_029.jpg" alt="RallyCup Přerov – závodní vůz na trati letiště">
+      </div>
+    </article>
+
+    <article class="portfolio-item">
+      <div class="item-description">
+        <h2>Zuberský masopust</h2>
+        <p class="date">01. 03. 2025</p>
+        <p class="description">Konec zimy v plné parádě. Od tradičních maškar přes dechovku až po zastávky u sousedů s koblihami a něčím na zahřátí. Fotoreportáž o tom, jak živé a radostné dokážou být lidové tradice, když se sejde dobrá parta.</p>
+      </div>
+      <div class="image-container">
+        <img src="img/Masopust/MV_MasopustZubri_1.3.2025_0004.jpg" alt="Zuberský masopust – tradiční maškarní průvod">
+      </div>
+    </article>
+  </main>
+
+  <section id="poptavka" class="contact-section" aria-labelledby="formTitle">
+    <div class="contact-header">
+      <h2 id="formTitle">Kontaktní formulář</h2>
+      <p>Máte zájem o spolupráci, dotaz nebo chcete pouze zanechat zpětnou vazbu? Neváhejte se ozvat.</p>
+    </div>
+
+    <form id="contactForm" novalidate aria-labelledby="formTitle">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Jméno</label>
+          <input type="text" id="name" name="name" required placeholder="Jan Novák" autocomplete="name" aria-required="true">
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required placeholder="jan.novak@email.cz" autocomplete="email" aria-required="true">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Zpráva</label>
+        <textarea id="message" name="message" rows="4" required placeholder="Vaše zpráva..." aria-required="true"></textarea>
+      </div>
+
+      <button type="submit">Odeslat dotaz</button>
+
+      <!-- Zpráva potvrzující odeslání či chybu -->
+      <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+    </form>
+  </section>
+
+  <!-- Patička -->
+  <footer>
+    <span>&copy; Martin Vrána <script>document.write(new Date().getFullYear())</script></span>
+    <span><a href="https://www.instagram.com/vartin_mrana/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profil @vartin_mrana (otevře se v novém okně)">@vartin_mrana</a> · +420 111 222 333</span>
+  </footer>
+</body>
+
+</html>
